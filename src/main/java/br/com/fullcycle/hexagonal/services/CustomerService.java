@@ -2,17 +2,18 @@ package br.com.fullcycle.hexagonal.services;
 
 import br.com.fullcycle.hexagonal.models.Customer;
 import br.com.fullcycle.hexagonal.repositories.CustomerRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.Optional;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Optional;
 
 @Service
 public class CustomerService {
 
-    @Autowired
-    private CustomerRepository repository;
+    private final CustomerRepository repository;
+
+    public CustomerService(final CustomerRepository repository) {
+        this.repository = repository;
+    }
 
     @Transactional
     public Customer save(Customer customer) {

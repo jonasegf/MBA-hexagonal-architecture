@@ -1,13 +1,12 @@
 package br.com.fullcycle.hexagonal.models;
 
+import static jakarta.persistence.GenerationType.IDENTITY;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
 import java.util.Objects;
-
-import static jakarta.persistence.GenerationType.*;
 
 @Entity
 @Table(name = "customers")
@@ -26,7 +25,7 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(Long id, String name, String cpf, String email) {
+    public Customer(Long id, String name, String email, String cpf) {
         this.id = id;
         this.name = name;
         this.cpf = cpf;

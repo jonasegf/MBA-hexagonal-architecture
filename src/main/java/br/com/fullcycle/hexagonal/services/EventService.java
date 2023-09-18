@@ -4,23 +4,24 @@ import br.com.fullcycle.hexagonal.models.Event;
 import br.com.fullcycle.hexagonal.models.Ticket;
 import br.com.fullcycle.hexagonal.repositories.EventRepository;
 import br.com.fullcycle.hexagonal.repositories.TicketRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.Optional;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Optional;
 
 @Service
 public class EventService {
 
-    @Autowired
-    private CustomerService customerService;
+    private final CustomerService customerService;
+    private final EventRepository eventRepository;
+    private final TicketRepository ticketRepository;
 
-    @Autowired
-    private EventRepository eventRepository;
-
-    @Autowired
-    private TicketRepository ticketRepository;
+    public EventService(final CustomerService customerService,
+                        final EventRepository eventRepository,
+                        final TicketRepository ticketRepository) {
+        this.customerService = customerService;
+        this.eventRepository = eventRepository;
+        this.ticketRepository = ticketRepository;
+    }
 
     @Transactional
     public Event save(Event event) {
