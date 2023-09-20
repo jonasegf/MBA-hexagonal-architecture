@@ -1,4 +1,4 @@
-package br.com.fullcycle.hexagonal;
+package br.com.fullcycle.hexagonal.infrastructure;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
