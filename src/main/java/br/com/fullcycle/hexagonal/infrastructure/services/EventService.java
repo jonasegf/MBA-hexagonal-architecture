@@ -1,9 +1,9 @@
-package br.com.fullcycle.hexagonal.services;
+package br.com.fullcycle.hexagonal.infrastructure.services;
 
-import br.com.fullcycle.hexagonal.models.Event;
-import br.com.fullcycle.hexagonal.models.Ticket;
-import br.com.fullcycle.hexagonal.repositories.EventRepository;
-import br.com.fullcycle.hexagonal.repositories.TicketRepository;
+import br.com.fullcycle.hexagonal.infrastructure.models.Event;
+import br.com.fullcycle.hexagonal.infrastructure.models.Ticket;
+import br.com.fullcycle.hexagonal.infrastructure.repositories.EventRepository;
+import br.com.fullcycle.hexagonal.infrastructure.repositories.TicketRepository;
 import java.util.Optional;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

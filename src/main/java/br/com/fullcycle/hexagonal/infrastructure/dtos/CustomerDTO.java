@@ -1,6 +1,6 @@
-package br.com.fullcycle.hexagonal.dtos;
+package br.com.fullcycle.hexagonal.infrastructure.dtos;
 
-import br.com.fullcycle.hexagonal.models.Customer;
+import br.com.fullcycle.hexagonal.infrastructure.models.Customer;
 
 public class CustomerDTO {
     private Long id;

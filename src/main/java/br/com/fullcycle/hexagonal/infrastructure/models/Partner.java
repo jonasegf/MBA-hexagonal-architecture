@@ -1,25 +1,34 @@
-package br.com.fullcycle.hexagonal.dtos;
+package br.com.fullcycle.hexagonal.infrastructure.models;
 
-import br.com.fullcycle.hexagonal.models.Partner;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-public class PartnerDTO {
+import static jakarta.persistence.GenerationType.IDENTITY;
+
+@Entity
+@Table(name = "partners")
+public class Partner {
+
+    @Id
+    @GeneratedValue(strategy = IDENTITY)
     private Long id;
+
     private String name;
+
     private String cnpj;
+
     private String email;
 
-    public PartnerDTO() {
+    public Partner() {
     }
 
-    public PartnerDTO(Long id) {
+    public Partner(Long id, String name, String cnpj, String email) {
         this.id = id;
-    }
-
-    public PartnerDTO(Partner partner) {
-        this.id = partner.getId();
-        this.name = partner.getName();
-        this.cnpj = partner.getCnpj();
-        this.email = partner.getEmail();
+        this.name = name;
+        this.cnpj = cnpj;
+        this.email = email;
     }
 
     public Long getId() {

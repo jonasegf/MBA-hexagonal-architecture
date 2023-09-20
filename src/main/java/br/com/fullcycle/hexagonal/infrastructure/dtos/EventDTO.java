@@ -1,6 +1,6 @@
-package br.com.fullcycle.hexagonal.dtos;
+package br.com.fullcycle.hexagonal.infrastructure.dtos;
 
-import br.com.fullcycle.hexagonal.models.Event;
+import br.com.fullcycle.hexagonal.infrastructure.models.Event;
 
 import java.time.format.DateTimeFormatter;
 

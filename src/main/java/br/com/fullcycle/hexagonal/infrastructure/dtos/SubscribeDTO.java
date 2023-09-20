@@ -1,4 +1,4 @@
-package br.com.fullcycle.hexagonal.dtos;
+package br.com.fullcycle.hexagonal.infrastructure.dtos;
 
 public class SubscribeDTO {
 

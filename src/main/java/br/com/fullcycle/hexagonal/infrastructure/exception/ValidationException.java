@@ -1,4 +1,4 @@
-package br.com.fullcycle.hexagonal.exception;
+package br.com.fullcycle.hexagonal.infrastructure.exception;
 
 public class ValidationException extends RuntimeException {
   public ValidationException(final String message, final Throwable cause) {

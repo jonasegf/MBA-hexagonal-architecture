@@ -1,4 +1,4 @@
-package br.com.fullcycle.hexagonal.models;
+package br.com.fullcycle.hexagonal.infrastructure.models;
 
 public enum TicketStatus {
     PENDING, PROCESSING, PAID;

@@ -1,6 +1,6 @@
-package br.com.fullcycle.hexagonal.repositories;
+package br.com.fullcycle.hexagonal.infrastructure.repositories;
 
-import br.com.fullcycle.hexagonal.models.Ticket;
+import br.com.fullcycle.hexagonal.infrastructure.models.Ticket;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

@@ -1,7 +1,7 @@
-package br.com.fullcycle.hexagonal.dtos;
+package br.com.fullcycle.hexagonal.infrastructure.dtos;
 
-import br.com.fullcycle.hexagonal.models.Ticket;
-import br.com.fullcycle.hexagonal.models.TicketStatus;
+import br.com.fullcycle.hexagonal.infrastructure.models.Ticket;
+import br.com.fullcycle.hexagonal.infrastructure.models.TicketStatus;
 
 import java.time.Instant;
 

@@ -1,7 +1,7 @@
-package br.com.fullcycle.hexagonal.services;
+package br.com.fullcycle.hexagonal.infrastructure.services;
 
-import br.com.fullcycle.hexagonal.models.Customer;
-import br.com.fullcycle.hexagonal.repositories.CustomerRepository;
+import br.com.fullcycle.hexagonal.infrastructure.models.Customer;
+import br.com.fullcycle.hexagonal.infrastructure.repositories.CustomerRepository;
 import java.util.Optional;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

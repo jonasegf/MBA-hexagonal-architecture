@@ -1,10 +1,10 @@
-package br.com.fullcycle.hexagonal.controllers;
+package br.com.fullcycle.hexagonal.infrastructure.controllers;
 
 import br.com.fullcycle.hexagonal.application.usecases.CreateCustomerUseCase;
 import br.com.fullcycle.hexagonal.application.usecases.GetCustomerUseCase;
-import br.com.fullcycle.hexagonal.dtos.CustomerDTO;
-import br.com.fullcycle.hexagonal.exception.ValidationException;
-import br.com.fullcycle.hexagonal.services.CustomerService;
+import br.com.fullcycle.hexagonal.infrastructure.dtos.CustomerDTO;
+import br.com.fullcycle.hexagonal.infrastructure.exception.ValidationException;
+import br.com.fullcycle.hexagonal.infrastructure.services.CustomerService;
 import java.net.URI;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "customers")
 public class CustomerController {
-
   private final CustomerService customerService;
 
   public CustomerController(final CustomerService customerService) {

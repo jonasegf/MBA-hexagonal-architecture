@@ -1,10 +1,10 @@
-package br.com.fullcycle.hexagonal.controllers;
+package br.com.fullcycle.hexagonal.infrastructure.controllers;
 
 import br.com.fullcycle.hexagonal.application.usecases.CreatePartnerUseCase;
 import br.com.fullcycle.hexagonal.application.usecases.GetPartnerByIdUseCase;
-import br.com.fullcycle.hexagonal.dtos.PartnerDTO;
-import br.com.fullcycle.hexagonal.exception.ValidationException;
-import br.com.fullcycle.hexagonal.services.PartnerService;
+import br.com.fullcycle.hexagonal.infrastructure.dtos.PartnerDTO;
+import br.com.fullcycle.hexagonal.infrastructure.exception.ValidationException;
+import br.com.fullcycle.hexagonal.infrastructure.services.PartnerService;
 import java.net.URI;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "partners")
 public class PartnerController {
-
   private final PartnerService partnerService;
 
   public PartnerController(final PartnerService partnerService) {
