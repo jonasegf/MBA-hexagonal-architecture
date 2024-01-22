@@ -1,7 +1,7 @@
 package br.com.fullcycle.hexagonal.application.usecases;
 
 import br.com.fullcycle.hexagonal.IntegrationTestBase;
-import br.com.fullcycle.hexagonal.infrastructure.exception.ValidationException;
+import br.com.fullcycle.hexagonal.application.exception.ValidationException;
 import br.com.fullcycle.hexagonal.infrastructure.models.Customer;
 import br.com.fullcycle.hexagonal.infrastructure.models.Event;
 import br.com.fullcycle.hexagonal.infrastructure.models.TicketStatus;

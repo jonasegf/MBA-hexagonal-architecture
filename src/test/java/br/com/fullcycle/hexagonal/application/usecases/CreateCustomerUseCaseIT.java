@@ -3,7 +3,7 @@ package br.com.fullcycle.hexagonal.application.usecases;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import br.com.fullcycle.hexagonal.IntegrationTestBase;
-import br.com.fullcycle.hexagonal.infrastructure.exception.ValidationException;
+import br.com.fullcycle.hexagonal.application.exception.ValidationException;
 import br.com.fullcycle.hexagonal.infrastructure.models.Customer;
 import br.com.fullcycle.hexagonal.infrastructure.repositories.CustomerRepository;
 import org.junit.jupiter.api.AfterEach;

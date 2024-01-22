@@ -10,15 +10,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class EventService {
-
-    private final CustomerService customerService;
     private final EventRepository eventRepository;
     private final TicketRepository ticketRepository;
 
-    public EventService(final CustomerService customerService,
-                        final EventRepository eventRepository,
+  public EventService(final EventRepository eventRepository,
                         final TicketRepository ticketRepository) {
-        this.customerService = customerService;
         this.eventRepository = eventRepository;
         this.ticketRepository = ticketRepository;
     }

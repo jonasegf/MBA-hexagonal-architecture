@@ -1,18 +1,20 @@
 package br.com.fullcycle.hexagonal.infrastructure.services;
 
-import br.com.fullcycle.hexagonal.infrastructure.repositories.PartnerRepository;
 import br.com.fullcycle.hexagonal.infrastructure.models.Partner;
-import org.springframework.beans.factory.annotation.Autowired;
+import br.com.fullcycle.hexagonal.infrastructure.repositories.PartnerRepository;
+import java.util.Objects;
+import java.util.Optional;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Optional;
 
 @Service
 public class PartnerService {
 
-    @Autowired
-    private PartnerRepository repository;
+    private final PartnerRepository repository;
+
+    public PartnerService(final PartnerRepository repository) {
+        this.repository = Objects.requireNonNull(repository);
+    }
 
     @Transactional
     public Partner save(Partner customer) {

@@ -1,10 +1,9 @@
 package br.com.fullcycle.hexagonal.application.usecases;
 
 import br.com.fullcycle.hexagonal.application.UseCase;
-import br.com.fullcycle.hexagonal.infrastructure.exception.ValidationException;
+import br.com.fullcycle.hexagonal.application.exception.ValidationException;
 import br.com.fullcycle.hexagonal.infrastructure.models.Customer;
 import br.com.fullcycle.hexagonal.infrastructure.services.CustomerService;
-import jakarta.inject.Named;
 
 public class CreateCustomerUseCase
     extends UseCase<CreateCustomerUseCase.Input, CreateCustomerUseCase.Output> {

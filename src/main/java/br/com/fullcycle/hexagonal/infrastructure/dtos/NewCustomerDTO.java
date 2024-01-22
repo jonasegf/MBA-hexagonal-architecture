@@ -1,7 +1,7 @@
 package br.com.fullcycle.hexagonal.infrastructure.dtos;
 
-public record PartnerDTO(
+public record NewCustomerDTO(
     String name,
-    String cnpj,
+    String cpf,
     String email) {
 }
